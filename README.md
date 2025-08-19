@@ -1,24 +1,46 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Agent Frontend (Next.js)
 
+Este repositorio contiene el frontend (en Next.js 13) para la aplicación de agente AI que analiza documentos.  
+El backend correspondiente está disponible aquí: [rag-agent backend](https://github.com/crcordova/rag-agent)
+
+---
+
+## ✅ Requisitos
+
+- Node.js 18 o superior
+- npm o yarn
+- Backend corriendo localmente (o en servidor) basado en FastAPI
+
+---
 ## Getting Started
 
-First, run the development server:
+Instal dependencias
 
 ```bash
+npm install
+```
+Crea un archivo `.env.local` en la raíz del proyecto con esta variable:
+```bash
+NEXT_PUBLIC_URL_API=http://localhost:8000
+```
+Asegúrate de que este URL apunte al backend FastAPI correspondiente.
+
+Modo desarrollo
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+
+Build de Producción
+```bash
+npm run build
+```
+```bash
+npm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
